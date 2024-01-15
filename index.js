@@ -22,11 +22,11 @@ class GUI {
         return imposto;
     }
     calcularINSS(salario) {
-        let table = [{ m: 0, i: 0 }, { m: 1302, i: 0.075 }, { m: 2571.29, i: 0.09 }, { m: 3856.94, i: 0.12 }, { m: 7507.49, i: 0.14 }];
+        let table = [{ m: 0, i: 0 }, { m: 1412, i: 0.075 }, { m: 2666.68, i: 0.09 }, { m: 4000.03, i: 0.12 }, { m: 7786.02, i: 0.14 }];
         return this.tabelaProgressiva(table, salario);
     }
     calcularIR(base) {
-        let table = [{ m: 1903.98, i: 0 }, { m: 2826.65, i: 0.075 }, { m: 3751.05, i: 0.15 }, { m: 4664.68, i: 0.225 }, { m: Number.POSITIVE_INFINITY, i: 0.275 }];
+        let table = [{ m: 2112, i: 0 }, { m: 2826.65, i: 0.075 }, { m: 3751.05, i: 0.15 }, { m: 4664.68, i: 0.225 }, { m: Number.POSITIVE_INFINITY, i: 0.275 }];
         return this.tabelaProgressiva(table, base);
     }
     calcularValeTransporte(passagem, salario) {
